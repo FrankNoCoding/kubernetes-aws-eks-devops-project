@@ -38,6 +38,7 @@ pipeline {
             steps {
               sh '''
               cd helm-charts
+              sed -i "s/replace_image_tag/${TAG_VERSION}/g" values.yaml
               helm upgrade --install project-app .
               kubectl get svc
               '''

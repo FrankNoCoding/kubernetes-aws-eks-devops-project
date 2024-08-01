@@ -8,7 +8,7 @@ image:
   repository: 315778511104.dkr.ecr.us-east-1.amazonaws.com/project-ecr-repo
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "replace_image_tag"
 
 imagePullSecrets: ""
 nameOverride: ""
